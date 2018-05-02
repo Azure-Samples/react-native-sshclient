@@ -1,0 +1,19 @@
+{
+  "name": "react-native-sshclient",
+  "version": "1.0.0",
+  "description": "A React Native module for an SSH client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "windows",
+    "ssh"
+  ],
+  "author": "Azure CAT E2E",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native-windows": "*"
+  }
+}

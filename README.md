@@ -1,57 +1,37 @@
-# Project Name
+# react-native-sshclient
 
-(short, 1-3 sentenced, description of the project)
+This is a React Native SSH client module for UWP applications.
 
-## Features
+### Install
 
-This project framework provides the following features:
+`npm install path/to/this/folder`
 
-* Feature 1
-* Feature 2
-* ...
+### Use in your code
 
-## Getting Started
+```
+import SSH from 'react-native-sshclient'
+...
+const config = {
+  host: '192.168.4.1',
+  user: 'username',
+  password: 'userpassword'
+};
+const command = 'ls -al';
 
-### Prerequisites
+SSH.Execute(config, command)
+  .then(response => console.log(response));
+```
 
-(ideally very short, if any)
+# Contributing
 
-- OS
-- Library version
-- ...
+This project welcomes contributions and suggestions.  Most contributions require you to agree to a
+Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
+the rights to use your contribution. For details, visit https://cla.microsoft.com.
 
-### Installation
+When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
+a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
+provided by the bot. You will only need to do this once across all repos using our CLA.
 
-(ideally very short)
-
-- npm install [package name]
-- mvn install
-- ...
-
-### Quickstart
-(Add steps to get up and running quickly)
-
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
-
-
-## Demo
-
-A demo app is included to show how to use the project.
-
-To run the demo, follow these steps:
-
-(Add steps to start up the demo)
-
-1.
-2.
-3.
-
-## Resources
-
-(Any additional resources or related projects)
-
-- Link to supporting information
-- Link to similar sample
-- ...
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
+contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
